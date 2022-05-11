@@ -15,3 +15,8 @@ sap_odata_flight_schedule_world = "ZC_MDD_VDMF_FS_WLD"
 # define web socket context
 sap_wsock_protocol = "ws://"
 sap_wsock_path = "/demos/mdd22/apc"
+
+# define REST context
+sap_rest_params   = "?sap-client=100"
+sap_rest_endpoint = "/demos/mdd22/rest"
+sap_rest_flight_schedule_world = "FlightSchedule"
