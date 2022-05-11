@@ -1,7 +1,5 @@
 # Demo to connect to SAP ABAP Push Channel as Python WebSocket Client 
-# and listen 
-
-
+# and send a command
 # Magdeburger Developement Days 2022 - https://md-devdays.de
 # Joerg Mueller - @MDJoerg
 

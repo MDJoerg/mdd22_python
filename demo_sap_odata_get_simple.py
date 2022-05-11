@@ -1,5 +1,5 @@
-# Demo to connect to SAP ABAP Push Channel as Python WebSocket Client 
-# and listen to external commands
+# Demo to connect to SAP OData Endpoint Python WebSocket Client 
+# Get a Entity Set List and parse JSON Request
 # Magdeburger Developement Days 2022 - https://md-devdays.de
 # Joerg Mueller - @MDJoerg
 
