@@ -1,5 +1,5 @@
-# Demo to connect to SAP OData Endpoint Python WebSocket Client 
-# Create a new SAP Airport Entity SAP 
+# Demo to connect to SAP REST Endpoint - Python WebClient Client 
+# Delete an existing SAP Airport Record (first Char is x..Z) 
 # Magdeburger Developement Days 2022 - https://md-devdays.de
 # Joerg Mueller - @MDJoerg
 

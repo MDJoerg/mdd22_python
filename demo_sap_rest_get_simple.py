@@ -1,5 +1,5 @@
-# Demo to connect to SAP OData Endpoint Python WebSocket Client 
-# Get a Entity Set List and parse JSON Request
+# Demo to connect to SAP REST Endpoint - Python WebClient Client 
+# Get a List of SAP Resords and parse JSON Request
 # Magdeburger Developement Days 2022 - https://md-devdays.de
 # Joerg Mueller - @MDJoerg
 
