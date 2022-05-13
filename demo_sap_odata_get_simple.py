@@ -7,6 +7,10 @@ import sap_context
 import requests
 import json
 
+# hacks
+print_record_json = True
+print_record_list = False
+
 # build service url
 odata_url = "http://" + sap_context.sap_host + ":" + sap_context.sap_http_port
 odata_url += sap_context.sap_odata_endpoint + "/" + sap_context.sap_odata_flight_schedule_world + sap_context.sap_odata_params
@@ -31,7 +35,10 @@ else:
         for json_result in json_results:
             index += 1
             print("\nResult Index: ", index)
-            for json_attribute in json_result:
-                print(json_attribute, " = ", json_result[json_attribute])
+            if print_record_json == True:
+                print(json.dumps(json_result))
+            if print_record_list == True:
+                for json_attribute in json_result:
+                    print(json_attribute, " = ", json_result[json_attribute])
 
 

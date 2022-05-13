@@ -1,4 +1,3 @@
-# Demo to connect to SAP REST Endpoint - Python WebClient Client 
 # Create a new SAP Airport Entity SAP 
 # Magdeburger Developement Days 2022 - https://md-devdays.de
 # Joerg Mueller - @MDJoerg
