@@ -7,7 +7,7 @@ import asyncio
 import websockets
 import sap_context
 
-async def test(url, clientId):   
+async def ws_listen(url, clientId):   
     async with websockets.connect(url) as websocket:
         
         print("Connect to SAP APC Websocket:", url)
@@ -26,7 +26,7 @@ async def test(url, clientId):
             if  pos_sep > 0:
                 command = response[:pos_sep]
                 payload = response[pos_sep + 1:]
-                print(f"< COMMAND: {command} payload = '{payload}'")
+                print(f"< COMMAND detected: {command} payload = '{payload}'")
 
             if command == "quit":
                 quit_arrived = True
@@ -41,4 +41,8 @@ ws_url = sap_context.sap_wsock_protocol + sap_context.sap_host + ":" + sap_conte
 ws_url += sap_context.sap_wsock_path + "?sap-client=" + sap_context.sap_client
 
 # open listener until quit command or kill detected
-asyncio.get_event_loop().run_until_complete(test(ws_url, client_id))
+try:
+    asyncio.get_event_loop().run_until_complete(ws_listen(ws_url, client_id))
+except KeyboardInterrupt:
+    print("Cancelled by user!")
+
