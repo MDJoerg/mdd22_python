@@ -16,7 +16,6 @@ if airport_name == "":
     quit()
 
 airport_timezone = input("Enter the airport timezone: ")
-        
 
 # build service url
 rest_url = "http://" + sap_context.sap_host + ":" + sap_context.sap_http_port

@@ -18,7 +18,6 @@ rest_url += sap_context.sap_rest_endpoint + "/" + sap_context.sap_rest_airport
 rest_url += "/" + rest_id + sap_context.sap_rest_params
 print("REST URL: ", rest_url)
 
-
 # call sap odata service api
 response = requests.get(rest_url)
 
@@ -31,4 +30,3 @@ else:
     else:    
         json_response = json.loads(response.text)
         print(json_response)
-

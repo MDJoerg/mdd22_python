@@ -12,13 +12,11 @@ airport_id = input("Enter the airport ID to delete: ")
 if airport_id == "":
     quit()
         
-
 # build service url
 rest_url = "http://" + sap_context.sap_host + ":" + sap_context.sap_http_port
 rest_url += sap_context.sap_rest_endpoint + "/" + sap_context.sap_rest_airport
 rest_url += "/" + airport_id + sap_context.sap_rest_params
 print("REST URL: ", rest_url)
-
 
 # call sap odata service api
 response = requests.delete(rest_url)
